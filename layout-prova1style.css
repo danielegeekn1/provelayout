@@ -1,0 +1,73 @@
+.gridcontainer {display: grid;
+                grid-template-columns:15% 85%;
+                grid-row:10% 90%;
+                border:2px solid black;}
+.gridaside {display: grid;
+            grid-column: 1;
+            grid-row: 1/3;
+            background-color:grey;}
+    .gridasidecontainer{display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    height:500px;
+                    width:100px;
+                    grid-template-rows: repeat(1fr, 6);}
+            .gridasidecontainerchild1 {display:grid;
+                                       grid-column: 1/3;
+                                       grid-row: 1/3;
+                                       background-color: blue;}
+            .gridasidecontainerchild2 {display: grid;
+                                       grid-column: 1;
+                                       grid-row:3/7;}
+.gridnav {display:grid;
+         grid-column: 2;
+         grid-row:1;
+         background-color: lightgrey;}
+    .gridnavcontainer {display: grid;
+                      grid-template-columns: repeat(1fr, 4);
+                      grid-template-rows: 1fr;}
+        .gridnavcontainerchild1 {display: grid;
+                                grid-column:4;
+                                grid-row:1;
+                                background-color: grey;
+                                border-radius: 25%;}
+.gridmain {display: grid;
+            grid-column:2;
+            grid-row:2;}
+    .gridmaincontainer {display: grid;
+                    grid-template-columns: 15% 70% 15% ;
+                    grid-template-rows:25% 50% 25%;
+                    height:500px;
+                    width:500px;
+                  }
+        .gridmaincontainerchild1 {display:grid;
+                                 grid-column: 1;
+                                 grid-row: 1;}
+
+        .gridmaincontainerchild2    {display:grid;
+                                    grid-column: 2;
+                                    grid-row: 1;}          
+                                    
+         .gridmaincontainerchild3   {display:grid;
+                                        grid-column: 3;
+                                        grid-row: 1;}
+
+         .gridmaincontainerchild4 {display:grid;
+                                    grid-column:1;
+                                    grid-row: 2;}
+         .gridmaincontainerchild5    {display:grid;
+                                     grid-column: 2;
+                                        grid-row: 2;
+                                     background-color: pink;}
+         .gridmaincontainerchild6    {display:grid;
+                                        grid-column:3 ;
+                                         grid-row: 2;}
+       .gridmaincontainerchild7     {display:grid;
+                                            grid-column: 1;
+                                            grid-row: 3;}
+         .gridmaincontainerchild8   {display:grid;
+                                                grid-column:2;
+                                                grid-row: 3;}   
+         .gridmaincontainerchild9 {display:grid;
+                                     grid-column: 3;
+                                 grid-row: 3;}                       
+        
