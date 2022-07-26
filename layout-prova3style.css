@@ -1,0 +1,81 @@
+.gridmaincontainer {display: grid;
+                    grid-template-columns: 20% 80%;
+                    grid-template-rows: 30% 70%;
+                    height:1300px;
+                    width:1400px;
+                    background-color: lightgrey;
+                    grid-template-areas: 
+                    "aside main"
+                    "aside main";}
+    .aside {grid-area: aside;
+            background-color: grey;}
+        .asidecontainer {display:grid;
+                        grid-template-columns:100%;
+                        grid-template-rows:15% 85%;
+                        height:1300px;
+                        width:280px;
+                        grid-template-areas:
+                        "asidechild1"
+                        "asidechild2";}
+           .asidechild1 {grid-area: asidechild1;}
+           .asidechild2 {grid-area: asidechild2;}
+    .main {grid-area:main;}
+          .maincontainer {display: grid;
+                        grid-template-columns: 15% 70% 15%;
+                        grid-template-rows: 10% 25% 40% 25%;
+                        background-color: white;
+                        width:1200px;
+                        height:1300px;
+                        grid-template-areas: 
+                        "mainchild1 mainchild1 mainchild1"
+                        ". . ."
+                        ". mainchild3 ."
+                        "mainchild4 mainchild4 mainchild4";}
+                .mainchild1 {grid-area: mainchild1;
+                            background-color: lightgray;}
+                .mainchild2 {grid-area: mainchild2;}
+                .mainchild3 {grid-area: mainchild3;
+                            background-color: pink;}
+                .mainchild4 {grid-area: mainchild4;}
+        button {height:60px;
+                width:60px;}
+        .ball {border-radius: 50%;
+                height:60px;
+                width:60px;
+                background-color: grey;}
+            .buttonposition {display: flex;
+                            width:1150px;
+                            height:120px;
+                            align-items: center;
+                           
+                            justify-content: flex-end;}
+            .buttonposition2 { display: flex;
+                                width:830px;
+                                 height:220px;
+                                 justify-content: center;
+                                 align-items: flex-end;}
+           .ballposition   {display: flex;
+                             width:1160px;
+                             margin-top: 3em;
+                             margin-right:5em;
+                            justify-content: flex-end;
+                            align-items: flex-end;
+                            height:240px;
+                            margin-right: 5em;}
+            .boxposition    {display: flex;
+                            background-color: blue;
+                            margin-left: 2em;
+                            margin-top: 2em;
+                            width:190px;
+                            height: 90px;}
+            .maininputposition {display: flex;
+                                width:840px;
+                                height:200px;
+                                align-items: end;
+                                justify-content: center;}
+            .inputposition {display:flex;
+                            height:40px;
+                            width:220px;}
+                        
+        
+    
