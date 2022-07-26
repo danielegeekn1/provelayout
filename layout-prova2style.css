@@ -1,59 +1,103 @@
 .gridcontainer {display:grid;
                 grid-template-columns: 5% 60% 35%;
-                grid-template-rows: 10% 90%;
+                grid-template-rows: 10% 85% 5%;
                 width:1300px;
-                height:1000px;
+                height:1300px;
                 border: 1px solid black;
                 grid-template-areas: 
                 "leftsidebar main rightsidebar"
-                "leftsidebar main  rightsidebar";}
+                "leftsidebar main  rightsidebar"
+                "finalbar finalbar finalbar";}
 .leftsidebar {grid-area: leftsidebar;
               background-color: lightgrey;
-              border: 1px solid black; }
+             }
     .leftsidebarcontainer {display: grid;
                           grid-template-columns: 10%;
                           grid-template-rows: 10% 90%;
-                          height:1000px;
-                          width:320px;
-                         
+                          height:1233px;
+                          width:65px;
+                          border:1px solid black;
                           grid-template-areas:
                           "leftsidebarchild1"
                           "leftsidebarchild2";}
             .leftsidebarchild1 {grid-area: leftsidebarchild1 ;
                                 width:60px;
-                                 border: 2px solid black;}
+                              }
             .leftsidebarchild2 {grid-area: leftsidebarchild2;
                                 width:60px;
-                                border: 1px solid black;}
+                                height:1150px;}
 .main       {grid-area: main;
             border: 1px solid black;}
     .maincontainer {display: grid;
                     grid-template-columns: 1fr 1fr;
                     grid-template-rows: 20% 80%;
                     width:780px;
-                    height:996px;
-                    border: 2px solid black;
+                    height:1250px;
+                    
                     grid-template-areas:
                     "mainchild1 mainchild1"
                     "mainchild2 mainchild2" ;}
             .mainchild1 {grid-area: mainchild1;
-                          border: 1px solid black;}
+                          border: 1px solid black;
+                       }
             .mainchild2 {grid-area: mainchild2;
-                border: 1px solid black;}
+                        border: 1px solid black;}
 .rightsidebar {grid-area:rightsidebar;
                 background-color: grey;
                 border: 1px solid black;}
         .righsidebarcontainer {display: grid;
-                              grid-template-columns: 80% 20%;
-                              grid-template-rows: 20% 80%;
+                              grid-template-columns: 15% 70% 15%;
+                              grid-template-rows: repeat(1fr, 6);
                               border: 1px solid black;
                              grid-template-areas:
-                             "rightsidebarchild1 gridsidebarchild1"
-                             "rightsidebarchild2 gridsidebarchild2";}
+                             "rightsidebarchild1 rightsidebarchild1 rightsidebarchild1"
+                             ". rightsidebarchild2 ."
+                             ". . ."
+                             ". . . "
+                             ". . . "
+                             ". . .";}
                     .rightsidebarchild1 {grid-area: rightsidebarchild1;
-                                        border: 1px solid black;
-                                        width:370px;
-                                        height: 380px;}
+                                        width:450px;
+                                        height: 360px;}
+                        .rightplaceholderposition       {height:60px;
+                                                          width:250px;
+                                                          margin-left: 5em;
+                                                          margin-top: 5em;
+                                                        background-color:white ;
+                                                       }
                     .rightsidebarchild2 {grid-area: rightsidebarchild2;
-                                         border: 1px solid black;}
-            
+                                        
+                                       }
+                        .rightsidebarchild3 {grid-area: rightsidebarchild3;
+                                                }
+                        .rightsidebarchild4 {grid-area: rightsidebarchild4;
+                                                      }    
+.finalbar {grid-area: finalbar;
+          background-color: lightgrey;}
+button {height:50px;
+        width:50px;}
+.ball { width: 40px;
+        height: 40px;
+        background-color: grey;
+        border-radius: 50px;}
+ .ballposition      {display:flex;
+                height:1100px;
+                width:55px;
+               align-items: flex-end;
+               
+               justify-content:center;}
+
+.buttonposition      {display:flex;
+                         height:920px;
+                        width:60px;
+                         align-items: flex-start;
+                         
+                        justify-content:center;}
+.inputposition {display:flex;
+                height:250px;
+                width:1000px;
+                align-items: center;
+                margin-left: 0.8em;
+              }
+
+               
