@@ -1,0 +1,59 @@
+.gridcontainer {display:grid;
+                grid-template-columns: 5% 60% 35%;
+                grid-template-rows: 10% 90%;
+                width:1300px;
+                height:1000px;
+                border: 1px solid black;
+                grid-template-areas: 
+                "leftsidebar main rightsidebar"
+                "leftsidebar main  rightsidebar";}
+.leftsidebar {grid-area: leftsidebar;
+              background-color: lightgrey;
+              border: 1px solid black; }
+    .leftsidebarcontainer {display: grid;
+                          grid-template-columns: 10%;
+                          grid-template-rows: 10% 90%;
+                          height:1000px;
+                          width:320px;
+                         
+                          grid-template-areas:
+                          "leftsidebarchild1"
+                          "leftsidebarchild2";}
+            .leftsidebarchild1 {grid-area: leftsidebarchild1 ;
+                                width:60px;
+                                 border: 2px solid black;}
+            .leftsidebarchild2 {grid-area: leftsidebarchild2;
+                                width:60px;
+                                border: 1px solid black;}
+.main       {grid-area: main;
+            border: 1px solid black;}
+    .maincontainer {display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 20% 80%;
+                    width:780px;
+                    height:996px;
+                    border: 2px solid black;
+                    grid-template-areas:
+                    "mainchild1 mainchild1"
+                    "mainchild2 mainchild2" ;}
+            .mainchild1 {grid-area: mainchild1;
+                          border: 1px solid black;}
+            .mainchild2 {grid-area: mainchild2;
+                border: 1px solid black;}
+.rightsidebar {grid-area:rightsidebar;
+                background-color: grey;
+                border: 1px solid black;}
+        .righsidebarcontainer {display: grid;
+                              grid-template-columns: 80% 20%;
+                              grid-template-rows: 20% 80%;
+                              border: 1px solid black;
+                             grid-template-areas:
+                             "rightsidebarchild1 gridsidebarchild1"
+                             "rightsidebarchild2 gridsidebarchild2";}
+                    .rightsidebarchild1 {grid-area: rightsidebarchild1;
+                                        border: 1px solid black;
+                                        width:370px;
+                                        height: 380px;}
+                    .rightsidebarchild2 {grid-area: rightsidebarchild2;
+                                         border: 1px solid black;}
+            
