@@ -1,0 +1,64 @@
+.flexmaincontainer {display:flex;
+   
+                    flex-flow:row wrap;
+                    height:100vh;
+                    width:100vw;
+                    flex-basis:100%;}
+main {display:flex;
+     flex:3;
+     justify-content: center;
+     align-items: center;
+    flex-flow: column;
+    color: white;
+    background-color: black;}
+aside {display: flex;
+            flex-flow: column;
+             justify-content: space-between;
+             align-items: center;
+            flex:2;
+         background-color: lightblue}
+section > button {height:2rem;
+                 width:6rem;
+
+                border-bottom: 2px solid black;}
+button {width:6rem;
+        height: 2rem;
+        background-color: green;
+        border-radius:15px;}
+.ball {height:2rem;
+        width:2rem;
+        border-radius: 4rem;
+         background-color: orange;}
+
+.ballposition {height:4rem;
+                width:20rem;
+                display: flex;
+               
+                justify-content: end;}
+input   {width:8rem;
+        margin:0.5rem;
+        display: flex;
+        justify-content: center;}
+
+.inputposition {height:16rem;
+                width:19rem;
+                display:flex;
+                justify-content: center;
+                align-items: flex-start;
+                align-self: center;
+              
+}
+@media screen and (max-width:768px)
+{
+    .flexmaincontainer {display:flex;
+                        flex-flow:column;}
+    main {display:flex;
+        max-width:100%;
+        order:2;}
+    aside {display:flex;
+        order:1;}
+    .ballposition {height:3rem;
+                width:13rem;
+                align-items:start;
+    }
+}
