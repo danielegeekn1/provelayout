@@ -1,0 +1,40 @@
+.flexmaincontainer {display:flex;
+                    flex-flow:row wrap;
+                    height: 100vh;
+                    width:100vw;
+                    flex-basis: 100%;}
+    aside {display:flex;
+          flex-flow:column;
+            background-color:green;
+            align-items: center;
+           padding-top:2rem;
+          flex:3;}
+ aside  > button { height:2.5rem;
+             width:6rem;
+             background-color: blue; }
+    main {display:flex;
+         flex-flow:column;
+         flex:5;
+        background-color: aqua;}
+        main > nav {width:22rem;
+                    height:2rem;
+                    
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;}
+
+             nav > button { height:1.5rem;
+                        width:2.5rem;
+                         background-color: blue; }
+input {height:1rem;
+        width:10rem;
+        
+        border: 1px solid red;}
+         
+ .box {height:12rem;
+        width:22rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        border: 2px solid red;}                        
+    
