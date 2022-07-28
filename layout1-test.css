@@ -1,3 +1,9 @@
+* {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+img {max-width:100%;}
 .flexmaincontainer {display:flex;
                     flex-flow:row wrap;
                     height: 100vh;
@@ -8,33 +14,120 @@
             background-color:green;
             align-items: center;
            padding-top:2rem;
-          flex:3;}
- aside  > button { height:2.5rem;
+          flex:1;}
+ aside  > button { height:2.4rem;
              width:6rem;
              background-color: blue; }
+
+ article  > button { height:2rem;
+                     width:6rem;
+                     position:absolute;
+                     right:20rem;
+                     display:none;
+                      background-color: blue; }
+
     main {display:flex;
          flex-flow:column;
-         flex:5;
-        background-color: aqua;}
-        main > nav {width:22rem;
-                    height:2rem;
-                    
+         flex:3;
+         justify-content: center;;
+         background-color: aqua;}
+        main > nav {width:58rem;
+                    height:5rem;
+                    border:1px solid black;
+                    background-color: lightgrey;
                     display: flex;
-                    justify-content: end;
+                    justify-content: flex-end;
                     align-items: center;}
 
              nav > button { height:1.5rem;
-                        width:2.5rem;
-                         background-color: blue; }
-input {height:1rem;
-        width:10rem;
-        
+                            width:2rem;
+                            background-color: blue; }
+
+input {height:2rem;
+        width:12rem;
+        margin-bottom: 4rem;
         border: 1px solid red;}
          
- .box {height:12rem;
-        width:22rem;
+ .box {height:20rem;
+        width:48rem;
         display: flex;
         flex-flow: column;
         justify-content: center;
-        border: 2px solid red;}                        
-    
+        margin: 4rem;
+        margin-top: 8rem;
+        align-items: center;
+        background-color: pink;
+        border: 2px solid red;}       
+        
+       .box > button {height:2rem;
+                     width:4rem;}
+.ball {height:2rem;
+       width:2rem;
+       border-radius: 3rem;
+       background-color: grey;}
+
+.ballposition {height:4rem;
+              width:56rem;
+              display: flex;
+               justify-content: flex-end;
+               align-items: center;
+              }
+
+.circle {height:2rem;
+        width:2rem;
+          border-radius:2rem;
+         background-color: grey;
+        display:none; }
+
+@media screen and (max-width:768px) {
+       .flexmaincontainer {display:flex;
+                            flex-flow:column;
+                            max-width:100% ;
+                            }
+               main                {display:flex;
+                                   flex-flow:column;
+                                   max-width: 100%;
+                                 
+                                   align-items: center;
+                                   justify-content: flex-start;
+                                   background-color: aqua;}
+              main > nav           {display:flex;
+                                   max-width:100%;}
+
+.circle {height:2rem;
+       width:2rem;
+         border-radius:2rem;
+        background-color: grey;
+       display:block; }
+
+.ball         {height:2rem;
+              width:2rem;
+              border-radius: 3rem;
+              background-color: grey;
+              display:none;}
+
+.ballposition {height:4rem;
+                     width:24rem;
+                     height:10rem;
+                     display: flex;
+                     
+                      justify-content: flex-end;
+                      align-items: flex-end;
+                     }
+
+aside {display:none;}
+article  > button {         
+                      display:block;
+             }
+.box                 {max-width:100% ;
+                     display: flex;
+                     width:28rem;
+                     height:10rem;
+                    margin-top: 0;
+                     justify-content: center;
+                     align-items:center;
+                     background-color:lightgrey;
+                     border: 2px solid red;}    
+
+ .box  > button    {display:none;}                
+}
