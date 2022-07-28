@@ -3,7 +3,7 @@
        padding: 0;
        box-sizing: border-box;
    }
-img {max-width:100%;}
+
 .flexmaincontainer {display:flex;
                     flex-flow:row wrap;
                     height: 100vh;
@@ -19,7 +19,7 @@ img {max-width:100%;}
              width:6rem;
              background-color: blue; }
 
- article  > button { height:2rem;
+ article  > button { height:2.5rem;
                      width:6rem;
                      position:absolute;
                      right:20rem;
