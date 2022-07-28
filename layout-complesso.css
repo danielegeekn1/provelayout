@@ -48,47 +48,67 @@ nav {display:flex;
                         border:1px solid blue; }
 
 main {display:flex;
-    flex-flow: column wrap;
-    flex:5;
+flex-flow: column wrap;
+    flex:4;
     gap:0.4rem;
     background-color: red;}
 
     .mainchild1 {display:flex;
- 
+               gap: 1rem;
+                flex-flow: row wrap;
                 justify-content: space-between;
-                gap: 4rem;
+                align-items: flex-start;
                 margin:1rem;
                 height:15rem;
-                border:1px solid black;}
+                width:42rem;
+                border:3px solid black;}
 
         .mainchild1 > div {display:flex;
-                            flex-flow: row wrap;
-                            height:6rem;
-                            width:18rem;
-                            
+                          
+                            height:4rem;
+                            width:22rem;
+                       
                             background-color: grey;
-                            border:1px solid brown;}
+                            border:2px solid blue;}
+        
         
         .mainchild1 > article {display:flex;
-                                height:6rem;
+                                height:4rem;
                                 width:5rem;
+                              
                                 background-color: grey;
                                 border:1px solid violet;}
-       /*  .mainchild1 > section > div {display:flex;
-                                        flex-flow:row wrap;
-                                        height:6rem;
-                                        width:6rem;
-                                         border:1px solid green;}*/
         
+    .mainchild1 > section     {display: flex;  
+   
+                                width:18rem;
+                                height:4rem;
+                                border:2px solid blue;}
 
-    .mainchild2 {display:flex;
-                flex-flow: column wrap;
+     .mainchild1  p     {display:flex;
+                            width:3rem;
+                            height:4rem;
+                         border:1px solid blue;}
+
+
+   .mainchild2 {display:flex;
                  height:45rem;
-                border:1px solid black;}
+                 margin: 1rem;
+                 width:42rem;
+                 justify-content: space-between;
+                 border:2px solid black;}
 
-        .mainchild2 > div {display:flex;}
+         .mainchild2 > section {display:flex;
+                                height:18rem;
+                                  width:120rem;
+                                  margin: 2rem;
+                                  background-color: grey;
+                                border:1px solid orange;}
+        
 
 aside {display: flex; 
      flex-flow:column wrap;
     flex:2;
     background-color:green;}
+
+ 
