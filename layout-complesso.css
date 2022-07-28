@@ -54,7 +54,7 @@ main {display:flex;
     background-color: red;}
 
     .mainchild1 {display:flex;
-        flex-flow: row wrap;
+ 
                 justify-content: space-between;
                 gap: 4rem;
                 margin:1rem;
